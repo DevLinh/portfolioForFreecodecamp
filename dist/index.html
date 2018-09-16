@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome | Portfolio</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header&Nav">
+        <header id="welcome-section">
+            <nav id="navbar">
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+
+                <div class="logo">
+                    DEVLINH
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#welcome-section">Home</a></li>
+                        <li><a href="#whatIDo">About</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="text">
+                <h1>Newbie + Learner</h1>
+                <p>"If you spend too much time thinking about a thing, you'll never get it done."</p>
+            </div>
+            
+        </header>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio quas iste praesentium numquam id saepe odit sed officia et nihil voluptates aliquid facilis eum omnis illum quae, minus molestiae modi excepturi? Error, repellendus dolorem totam libero nulla molestiae esse maiores optio accusantium earum ducimus perspiciatis culpa aperiam, nesciunt quia assumenda iure. Dolor dolores quidem, dolorem explicabo velit amet eveniet rem ut necessitatibus harum. Voluptatibus voluptate molestias impedit facilis explicabo ut voluptas totam iusto quam doloremque et eius, quidem error qui aliquid numquam velit natus distinctio repudiandae maiores facere inventore officia beatae. Quod nobis similique vel, necessitatibus dicta nulla optio blanditiis dolor mollitia quibusdam reprehenderit, quasi explicabo voluptatum ratione voluptatem. Repellendus sit in ab maiores fuga. Perspiciatis consequuntur ex porro perferendis eveniet necessitatibus autem illo, in quasi assumenda harum blanditiis explicabo aspernatur doloribus labore similique provident dolores ratione alias voluptates sapiente debitis? Recusandae qui rerum temporibus magni tenetur nesciunt illo voluptatum placeat alias nobis dolores eaque vel minima ducimus, libero itaque, eum doloribus? Explicabo labore quibusdam neque, velit reiciendis a, id odit consectetur similique cumque ea esse temporibus modi, consequatur vitae! Odit blanditiis ipsa nemo nisi, ex et obcaecati quis deserunt nobis. Debitis aliquam voluptate repellat eum! Pariatur, quo modi.</p>
+        </div>
+    </div>
+
+    <div class="wrapper" >
+        <div class="projects" id="projects">
+            <a href="https://devlinh.github.io/https-devlinh.github.io-landing-page-freeCodeCamp/" target="_blank" class="project project-tile"><img src="../dist/img/01.png" alt="project img"></a>
+            <a href="https://devlinh.github.io/https-devlinh.github.io-landing-page-freeCodeCamp/" target="_blank" class="project project-tile"><img src="../dist/img/02.png" alt="project img"></a>
+            <a href="https://devlinh.github.io/https-devlinh.github.io-landing-page-freeCodeCamp/" target="_blank" class="project project-tile"><img src="../dist/img/03.png" alt="project img"></a>
+            <a href="https://devlinh.github.io/https-devlinh.github.io-landing-page-freeCodeCamp/" target="_blank" class="project project-tile"><img src="../dist/img/04.png" alt="project img"></a>
+            <a href="https://devlinh.github.io/https-devlinh.github.io-landing-page-freeCodeCamp/" target="_blank" class="project project-tile"><img src="../dist/img/05.png" alt="project img"></a>
+            <a href="https://devlinh.github.io/https-devlinh.github.io-landing-page-freeCodeCamp/" target="_blank" class="project project-tile"><img src="../dist/img/06.png" alt="project img"></a>
+        </div>
+    
+        <div class="whatIDo" id="whatIDo">
+            <h1>Everything<br>You Need</h1>
+            <h2 class="iAm">I AM</h2>
+            <ul>
+                <li>Learning in University</li>
+                <li>Learning and coding on freeCodeCamp.org</li>
+                <li>Gym & Fitness</li>
+                <li>Making mini projects</li>
+                <li>...</li>
+            </ul>
+        </div>
+
+        <section class="contact-wrapper" id="contact">
+            <div class="contact">
+                <i class="fa fa-map-marker icon"></i>
+                <p>Ho Chi Minh City. Vietnam</p>
+            </div>
+
+            <div class="contact">
+                <i class="fa fa-globe icon"></i>
+                <p>devlinh99qb@gmail.com</p>
+            </div>
+
+            <div class="contact">
+                <a href="https://github.com/DevLinh" target="_blank" id="profile-link">
+                    <i class="fa fa-github icon"></i>
+                    <p>DevLinh</p>
+                </a>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2018 Linh Vo Van</p>
+        </footer>
+    </div>
+
+    
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+
+
+    <script type="text/javascript">
+    // Menu-toggle button
+
+    $(document).ready(function() {
+        $(".menu-icon").on("click",function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+
+    // Scrolling effect
+
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+
+        else{
+            $('nav').removeClass('black');
+        }
+    })
+    </script>
+</body>
+</html>
